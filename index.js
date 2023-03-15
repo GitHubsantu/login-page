@@ -14,3 +14,13 @@ var swiper = new Swiper(".mySwiper", {
         prevEl: ".swiper-button-prev",
     },
 });
+
+const loginsec=document.querySelector('.login-section')
+const Registerlink=document.querySelector('.Register-link')
+const Loginlink=document.querySelector('.Login-link')
+Loginlink.addEventListener('click',()=>{
+    loginsec.classList.add('active')
+})
+Registerlink.addEventListener('click',()=>{
+    loginsec.classList.remove('active')
+})
